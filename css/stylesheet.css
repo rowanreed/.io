@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-
-
-
 body{
 	margin: 0px;
 }
@@ -17,7 +14,7 @@ body{
 }
 
 #header{
-	background: linear-gradient(-90deg, #4286f4, white, #4286f4);
+	background: linear-gradient(-90deg, #4286f4, #000, #4286f4);
 	overflow: hidden;
 	padding-top: 15px;
 	padding-bottom: 15px;

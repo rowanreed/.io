@@ -2,11 +2,11 @@
 /* CSS Document */
 body{
 	margin: 0px;
-	background: linear-gradient(-90deg, #4286f4, white, #4286f4);
+	background: linear-gradient(-90deg, #4286f4, #000, #4286f4);
 }
 
 #header{
-	background: linear-gradient(-90deg, #4286f4, white, #4286f4);
+	background: linear-gradient(-90deg, #4286f4, #000, #4286f4);
 	overflow: hidden;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -62,8 +62,7 @@ body{
 	margin-right:300px;
 	padding:0px;
 	height:100%;
-	width: 100%;
-			
+	width: 100%;		
 }
 .products li{
 	display:inline;
@@ -74,6 +73,7 @@ body{
 .item{
 	display:block;
 	text-decoration:none;
+	overflow: hidden;
 }
 .item img{
 	border: 1px solid #eee;
