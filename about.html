@@ -11,7 +11,6 @@
 
 <body>
 
-
 			<header id="header">	
 				
 				
@@ -32,7 +31,7 @@
 							<a href="store.html">Store</a>
 						</li>
 						<li>
-							<a href="DEMO.html">DEMO</a>
+							<a href="DEMO.html">DEMO and Log</a>
 						</li>
 					</ul>
 				</nav>
@@ -108,8 +107,24 @@
 		
 		<p>Cheney grew up in Vancouver, British Colombia. During high school, she was apart of her school's choir as well as their music club. While in college, her boyfriend at the time was making music and she began to develop her own ideas. Cheney watched tutorials on YouTube and started teaching herself music theory and production.</p>
 
-		<p> CRAY moved to Los Angeles in order to seek better opportunities for her music and gaming career. She has since played at Brownies and Lemonade shows as well as the main stage at HARD Summer. Cheney has been playing video games since her childhood and has made her passion for gaming apart of her brand. She hopes to combines music and gaming in her future career, and has gotten a start DJing major gaming events such as Dreamhack and E3. <a href="https://everipedia.org/wiki/cray-music/"> [1]</a> </p>
+		<p> CRAY moved to Los Angeles in order to seek better opportunities for her music and gaming career. She has since played at Brownies and Lemonade shows as well as the main stage at HARD Summer which takes place Glen Helen Regional Park. Cheney has been playing video games since her childhood and has made her passion for gaming apart of her brand. She hopes to combines music and gaming in her future career, and has gotten a start DJing major gaming events such as Dreamhack and E3. <a href="https://everipedia.org/wiki/cray-music/"> [1]</a> </p>
+		
+		<h3>HARD Summer Location:</h3>
+		
+		<div id="googleMap" style="width:100%;height:400px;"></div>
 		<br>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(34.20778,-117.40589),
+    zoom:14,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB4yrVqHbMuLW2zEwp-hZS6pZsjJbYu2w&callback=myMap"></script>
 	</div>
 	
 	<div>

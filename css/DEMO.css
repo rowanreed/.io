@@ -57,3 +57,24 @@ li {
 	position: relative;
 	top: 6px;
 }
+
+#demovid{
+	width: 560px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#kiddo {
+	width: 1170px;
+	margin: auto;
+	overflow: hidden;
+}
+
+#pdf {
+	width: 900px;
+	margin: auto;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+}
+
