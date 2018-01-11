@@ -4,9 +4,7 @@ body{
 	margin: 0px;
 }
 
-#homesection{
-	overflow: hidden;
-}
+
 
 #topimg{
 	width: 100%;
@@ -53,14 +51,7 @@ li {
 }
 	
 	
-#slider{
-	background-color: black;
-	overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    
-	
-}
+
 
 
 

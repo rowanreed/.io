@@ -2,6 +2,7 @@
 /* CSS Document */
 body{
 	margin: 0px;
+	background: linear-gradient(-90deg, #4286f4, #000, #4286f4);
 }
 
 #header{
@@ -54,10 +55,6 @@ li {
 	display: inline-block;
 	position: relative;
 	top: 6px;
-}
-
-#container{
-	 background: linear-gradient(-90deg, #4286f4, #000, #4286f4);
 }
 
 .box {
