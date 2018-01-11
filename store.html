@@ -176,6 +176,8 @@
 
 <script>
 	
+	
+	
 	// items to drag
 			$('.item').draggable({
 				revert:true,
@@ -263,7 +265,9 @@
 		$("#totalPrice").html(totalCart() );
 	}
 
+	loadLocal();
 	
+	displayCart();
 	
 	
 	
@@ -277,19 +281,18 @@
 	saveLocal();
 		
 	function saveLocal() {
-		localStorage.setItem("Basket", JSON.stringify(cart));
+		var JSONreadyCart = JSON.stringify(cart);
+		localStorage.setItem("Basket", JSONreadyCart);
 	}
 			
 	function loadLocal() {
 		cart = JSON.parse(localStorage.getItem("Basket"));
 	}
 	
-	loadLocal();
 	
-	displayCart();
 		
 
-	localStorage.setItem("name", "Jeff");
+	
 	
 	</script>
 </body>
