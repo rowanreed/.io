@@ -196,16 +196,6 @@
 				}
 			});
 	
-	function displayCart() {
-		var cartArray = cartdata();
-		var output = "";
-		for (var i in cartArray) {
-			output += "<li>"+cartArray[i].name+" "+cartArray[i].quantity+"</li>"
-		}
-		$("#cartUl").html(output);
-		$("#totalPrice").html(totalCart() );
-	}
-	
 	var cart = [];
 	
 	var Product = function(name, price, quantity) {
@@ -213,7 +203,7 @@
 		this.price = price
 		this.quantity = quantity
 	};
-
+	
 	function addProduct(name, price, quantity){
 			for (var i in cart) {
 				if (cart[i].name === name) {
@@ -243,7 +233,13 @@
 		return totalCost;
 	}
 	
-			
+	function clearCart() {
+		cart = [];
+		saveLocal();
+		$("#cartUl").empty();
+		$("#totalPrice").empty();
+	}
+	
 	function cartdata() {
 		var cartDuplicate = [];
 		for (var i in cart) {
@@ -256,13 +252,27 @@
 		}
 		return cartDuplicate;
 	}
-		
-	function clearCart() {
-		cart = [];
-		saveLocal();
-		$("#cartUl").empty();
-		$("#totalPrice").empty();
+	
+	function displayCart() {
+		var cartArray = cartdata();
+		var output = "";
+		for (var i in cartArray) {
+			output += "<li>"+cartArray[i].name+" "+cartArray[i].quantity+"</li>"
+		}
+		$("#cartUl").html(output);
+		$("#totalPrice").html(totalCart() );
 	}
+
+	
+	
+	
+	
+	
+	
+			
+	
+		
+	
 	
 	saveLocal();
 		
@@ -279,7 +289,7 @@
 	displayCart();
 		
 
-	
+	localStorage.setItem("name", "Jeff");
 	
 	</script>
 </body>
