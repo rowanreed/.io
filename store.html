@@ -22,7 +22,7 @@
 			<header id="header">	
 				
 				
-				
+				<!--The navigation menu -->
 				<div id="nav">
 				<nav> 
 					<ul class="navbar">
@@ -46,7 +46,7 @@
 				</div>
 				
 				<div class="socials">
-				
+					<!--The social media links -->
 					<a href="https://twitter.com/craysounds_">
 						
 						<svg id="twitter-icon" viewBox="0 0 64 64" width="64px" height="64px" fill="#FFFFFF" onclick="loadtwitter()">
@@ -107,7 +107,7 @@
 <section>
 
 	<div id="storediv">
-		
+		<!--All the individual products -->
 		<ul class="products">
 		<li>
 			<a href="#" class="item">
@@ -156,7 +156,7 @@
 		</li>
 		</ul>
 	</div>
-	
+	<!--Shopping cart on the right of the screen -->
 	<div class="cart">
 		<h1>Shopping Cart</h1>
 		<div style="background:#fff" >
@@ -165,9 +165,11 @@
 			</ul>
 			
 		</div>
+		<!--Button to empty the shopping cart -->
 		<div>
 				<button id="clear" onClick="clearCart()">Clear Cart</button>
 	  </div>
+	  <!--Displaying the cart total -->
 	  <p class="total">Total: £<span id="totalPrice"></span></p>
 		<h2>Drop here to add to cart</h2>
 	</div>
@@ -199,13 +201,13 @@
 			});
 	
 	var cart = [];
-	
+	//defining the products
 	var Product = function(name, price, quantity) {
 		this.name = name
 		this.price = price
 		this.quantity = quantity
 	};
-	
+	//adding the products using the defined variables
 	function addProduct(name, price, quantity){
 			for (var i in cart) {
 				if (cart[i].name === name) {
@@ -218,7 +220,7 @@
 		cart.push(product);
 		saveLocal();
 	}
-	
+	// calculating the quantity for the cart
 	function quantityCart() {
 		var totalQuantity = 0;
 		for (var i in cart) {
@@ -226,7 +228,7 @@
 		}
 		return totalQuantity;
 	}
-	
+	// calculating the total cost of the items in the cart
 	function totalCart() {
 		var totalCost = 0;
 		for (var i in cart) {
@@ -241,7 +243,7 @@
 		$("#cartUl").empty();
 		$("#totalPrice").empty();
 	}
-	
+	// array of the products
 	function cartdata() {
 		var cartDuplicate = [];
 		for (var i in cart) {
@@ -255,6 +257,7 @@
 		return cartDuplicate;
 	}
 	
+	// dislaying the products into the shopping cart
 	function displayCart() {
 		var cartArray = cartdata();
 		var output = "";
@@ -269,17 +272,8 @@
 	
 	displayCart();
 	
-	
-	
-	
-	
-			
-	
-		
-	
-	
 	saveLocal();
-		
+	//The functions for my local storage	
 	function saveLocal() {
 		var JSONreadyCart = JSON.stringify(cart);
 		localStorage.setItem("Basket", JSONreadyCart);
@@ -288,11 +282,6 @@
 	function loadLocal() {
 		cart = JSON.parse(localStorage.getItem("Basket"));
 	}
-	
-	
-		
-
-	
 	
 	</script>
 </body>
